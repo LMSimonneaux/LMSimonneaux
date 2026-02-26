@@ -1,48 +1,33 @@
-# About Me
+# About
 
-## Introduction
+Je suis Louis-Marie Simonneaux, étudiant en ingénierie du numérique à ENSEEIHT (Toulouse).
 
-Welcome! I'm a passionate developer and technology enthusiast committed to building innovative solutions and continuously expanding my skill set.
+## Profil
 
-## Professional Background
+J'aime construire des projets concrets à l'intersection de la tech, de la création et de l'entrepreneuriat.
+Mon objectif est de développer des produits utiles, avec une approche pragmatique orientée résultat.
 
-I'm dedicated to learning modern development practices and creating meaningful projects that solve real-world problems. My journey in technology is driven by curiosity and a commitment to excellence.
+## Ce que je développe
 
-## Skills & Technologies
+- Développement logiciel (Python, C/C++, bases web)
+- IA appliquée et automatisation
+- Projets entrepreneuriaux (MVP, tests utilisateurs, itérations)
 
-### Programming Languages
-- Python
-- JavaScript
-- HTML/CSS
+## Formation
 
-### Tools & Platforms
-- Git & GitHub
-- VS Code
-- Command Line
+- ENSEEIHT — Sciences du numérique (en cours)
+- CPGE (Physique / Sciences de l'ingénieur) — Lycée Chateaubriand, Rennes
 
-### Currently Learning
-- Web Development
-- Software Engineering Best Practices
-- Open Source Contribution
+## Intérêts
 
-## Interests
+- Machine learning
+- Product building
+- Musique (DJ / production)
+- Sport (football, vélo, course)
 
-- Building practical applications
-- Exploring new technologies
-- Continuous learning and improvement
-- Collaborating on interesting projects
+Retour à la page principale : [index](index.html)
 
-## Education
+## Navigation complémentaire
 
-I'm committed to continuous learning through online courses, documentation, and hands-on projects.
-
-## Goals
-
-- Develop a strong portfolio of projects
-- Contribute to open source communities
-- Master full-stack development
-- Build solutions that make a positive impact
-
----
-
-*This portfolio is a work in progress as I continue to grow and learn in my development journey.*
+- Parcours ingénierie : [Engineering Course](../engineering.md)
+- Développement de carrière : [Career Development](../carrer.md)

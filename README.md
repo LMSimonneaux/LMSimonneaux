@@ -1,7 +1,21 @@
-## Hi there 👋
+# ePortfolio GitHub — Louis-Marie Simonneaux
 
-See my eportfolio right there
-https://lmsimonneaux.github.io/LMSimonneaux/
+Migration de mon ePortfolio Muse vers une version GitHub Pages plus simple, plus lisible et maintenable.
 
-Here you can access to my CV
-https://github.com/LMSimonneaux/LMSimonneaux/blob/main/Louis-Marie%20Simonneaux.pdf
+## Accéder au portfolio
+
+- Site : [lmsimonneaux.github.io/LMSimonneaux](https://lmsimonneaux.github.io/LMSimonneaux/)
+- Dossier du site : `LMSimonneaux/`
+
+## Liens principaux
+
+- GitHub : [@LMSimonneaux](https://github.com/LMSimonneaux)
+- LinkedIn : [louis-marie-simonneaux-426a43386](https://www.linkedin.com/in/louis-marie-simonneaux-426a43386)
+- CV (PDF) : [Louis-Marie Simonneaux.pdf](https://github.com/LMSimonneaux/LMSimonneaux/blob/main/Louis-Marie%20Simonneaux.pdf)
+
+## Structure utile
+
+- `LMSimonneaux/index.html` : page d'accueil
+- `LMSimonneaux/about.md` : présentation
+- `LMSimonneaux/projects.md` : projets
+- `LMSimonneaux/contact.md` : contact

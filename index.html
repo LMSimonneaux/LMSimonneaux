@@ -1,21 +1,174 @@
-// Main page of my e-portfolio
-<html>
+<!doctype html>
+<html lang="fr">
     <head>
-        <title>My E-portfolio</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Louis-Marie Simonneaux | ePortfolio</title>
+        <meta
+            name="description"
+            content="ePortfolio de Louis-Marie Simonneaux — ingénierie numérique, IA, entrepreneuriat et projets personnels."
+        />
+        <style>
+            :root {
+                --bg: #0f172a;
+                --card: #111827;
+                --text: #e5e7eb;
+                --muted: #94a3b8;
+                --accent: #38bdf8;
+                --accent-soft: #0ea5e9;
+                --border: #1f2937;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 45%);
+                color: var(--text);
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 2rem 1rem 4rem;
+            }
+
+            .hero {
+                padding: 2rem;
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                background: rgba(17, 24, 39, 0.85);
+                backdrop-filter: blur(3px);
+            }
+
+            h1,
+            h2,
+            h3 {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+                margin-bottom: 0.4rem;
+            }
+
+            .subtitle {
+                color: var(--muted);
+                margin-bottom: 1.2rem;
+            }
+
+            .chips {
+                display: flex;
+                gap: 0.6rem;
+                flex-wrap: wrap;
+                margin: 1rem 0 0;
+            }
+
+            .chip {
+                font-size: 0.9rem;
+                padding: 0.35rem 0.7rem;
+                border: 1px solid var(--border);
+                border-radius: 999px;
+                color: #bfdbfe;
+            }
+
+            .section {
+                margin-top: 1.5rem;
+                padding: 1.3rem;
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                background: rgba(17, 24, 39, 0.75);
+            }
+
+            .links {
+                display: grid;
+                gap: 0.7rem;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--accent-soft);
+                text-decoration: underline;
+            }
+
+            .card-link {
+                border: 1px solid var(--border);
+                border-radius: 10px;
+                padding: 0.85rem;
+                background: rgba(2, 6, 23, 0.35);
+            }
+
+            .small {
+                font-size: 0.95rem;
+                color: var(--muted);
+            }
+        </style>
     </head>
     <body>
-        <form action="https://send.pageclip.co/tvkecqJDz27QfjsJMcXIMYS2nZHEvwT0" class="pageclip-form" method="post">
-            <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-            <input type="text" name="name" value="Roscoe Jones" />
-            <input type="email" name="email" value="roscoe@example.com" />
+        <main class="container">
+            <section class="hero">
+                <h1>Louis-Marie Simonneaux</h1>
+                <p class="subtitle">
+                    Étudiant en ingénierie numérique à ENSEEIHT • Toulouse • Focus IA, développement logiciel et entrepreneuriat
+                </p>
+                <p>
+                    Bienvenue sur mon ePortfolio GitHub. Cette version remplace mon ancienne version Muse avec une structure plus
+                    claire, plus rapide à charger, et facile à maintenir.
+                </p>
+                <div class="chips">
+                    <span class="chip">Computer Science</span>
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Entrepreneuriat</span>
+                    <span class="chip">EN/FR</span>
+                </div>
+            </section>
 
-            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-            <button type="submit" class="pageclip-form__submit">
-                <span>Send</span>
-            </button>
-        </form>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> 
+            <section class="section">
+                <h2>Projets clés</h2>
+                <div class="links">
+                    <article class="card-link">
+                        <h3>Gifted</h3>
+                        <p class="small">Projet entrepreneurial autour d'un cadeau personnalisé assisté par IA.</p>
+                        <a href="https://applicationgifted.vercel.app/" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+                    </article>
+                    <article class="card-link">
+                        <h3>LMix</h3>
+                        <p class="small">Activité DJ / création musicale et présence digitale locale.</p>
+                        <a href="https://www.youtube.com/@LMix-presta" target="_blank" rel="noopener noreferrer">Chaîne YouTube</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Navigation</h2>
+                <div class="links">
+                    <a class="card-link" href="about.md">About</a>
+                    <a class="card-link" href="projects.md">Projects</a>
+                    <a class="card-link" href="contact.md">Contact</a>
+                    <a class="card-link" href="../engineering.md">Engineering Course</a>
+                    <a class="card-link" href="../carrer.md">Career Development</a>
+                    <a class="card-link" href="https://github.com/LMSimonneaux" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>CV & réseaux</h2>
+                <p>
+                    <a href="https://www.linkedin.com/in/louis-marie-simonneaux-426a43386" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    ·
+                    <a href="https://github.com/LMSimonneaux/LMSimonneaux/blob/main/Louis-Marie%20Simonneaux.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                </p>
+                <p class="small">Dernière mise à jour : février 2026.</p>
+            </section>
+        </main>
     </body>
 </html>
