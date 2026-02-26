@@ -16,6 +16,8 @@ Migration de mon ePortfolio Muse vers une version GitHub Pages plus simple, plus
 ## Structure utile
 
 - `LMSimonneaux/index.html` : page d'accueil
-- `LMSimonneaux/about.md` : présentation
-- `LMSimonneaux/projects.md` : projets
-- `LMSimonneaux/contact.md` : contact
+- `LMSimonneaux/about.html` : présentation
+- `LMSimonneaux/projects.html` : projets
+- `LMSimonneaux/contact.html` : contact
+- `LMSimonneaux/engineering.html` : parcours ingénierie
+- `LMSimonneaux/career.html` : développement de carrière
