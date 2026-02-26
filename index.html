@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
     <head>
+        <link rel="icon" type="image/x-icon" href="images/pdp.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Louis-Marie Simonneaux | ePortfolio</title>
@@ -26,15 +27,35 @@
             body {
                 margin: 0;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 45%);
+                background: radial-gradient(circle at top, #334155 0%, #0f172a 55%);
+                position: relative;
+                min-height: 100vh;
+                isolation: isolate;
                 color: var(--text);
                 line-height: 1.6;
+            }
+
+            body::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                background-image: url("images/toulouse.jpeg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.24;
+                filter: blur(2px) brightness(1.28) saturate(1.08);
+                transform: scale(1.01);
+                z-index: 0;
+                pointer-events: none;
             }
 
             .container {
                 max-width: 960px;
                 margin: 0 auto;
                 padding: 2rem 1rem 4rem;
+                position: relative;
+                z-index: 1;
             }
 
             .hero {
@@ -43,6 +64,21 @@
                 border-radius: 16px;
                 background: rgba(17, 24, 39, 0.85);
                 backdrop-filter: blur(3px);
+            }
+
+            .hero-layout {
+                display: grid;
+                grid-template-columns: 120px 1fr;
+                gap: 1rem;
+                align-items: start;
+            }
+
+            .profile-photo {
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--border);
             }
 
             h1,
@@ -111,61 +147,81 @@
                 font-size: 0.95rem;
                 color: var(--muted);
             }
+
+            @media (max-width: 640px) {
+                .hero-layout {
+                    grid-template-columns: 1fr;
+                }
+
+                .profile-photo {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
         </style>
     </head>
     <body>
         <main class="container">
             <section class="hero">
-                <h1>Louis-Marie Simonneaux</h1>
-                <p class="subtitle">
-                    Étudiant en ingénierie numérique à ENSEEIHT • Toulouse • Focus IA, développement logiciel et entrepreneuriat
-                </p>
-                <p>
-                    Bienvenue sur mon ePortfolio GitHub. Cette version remplace mon ancienne version Muse avec une structure plus
-                    claire, plus rapide à charger, et facile à maintenir.
-                </p>
-                <div class="chips">
-                    <span class="chip">Computer Science</span>
-                    <span class="chip">Machine Learning</span>
-                    <span class="chip">Entrepreneuriat</span>
-                    <span class="chip">EN/FR</span>
+                <div class="hero-layout">
+                    <img class="profile-photo" src="images/pdp.png" alt="Photo de profil Louis-Marie Simonneaux" />
+                    <div>
+                        <h1>Louis-Marie Simonneaux</h1>
+                        <p class="subtitle">
+                            Fondateur EdT • Le Carré • Co-Fondateur Gifted • Élève à l'ENSSEIHT
+                        </p>
+                        <p>
+                            Pour les pressés : 🇫🇷🇬🇧&🇨🇳🇪🇸🤏, 📚👨‍💻, & ✝️⚽️🚴‍♂️🪗🎹🥁🎛️📽️🎭.
+                        </p>
+                        <div class="chips">
+                            <span class="chip">Entrepreneuriat</span>
+                            <span class="chip">Informatique</span>
+                            <span class="chip">Machine Learning</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="section">
-                <h2>Projets clés</h2>
+                <h2>Projets</h2>
                 <div class="links">
                     <article class="card-link">
-                        <h3>Gifted</h3>
-                        <p class="small">Projet entrepreneurial autour d'un cadeau personnalisé assisté par IA.</p>
-                        <a href="https://applicationgifted.vercel.app/" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+                        <h3>🎁 Gifted</h3>
+                        <p class="small">Offrir un cadeau personnalisé  et assisté par IA.</p>
+                        <a href="https://applicationgifted.vercel.app/" target="_blank" rel="noopener noreferrer">Site internet</a>
                     </article>
                     <article class="card-link">
-                        <h3>LMix</h3>
-                        <p class="small">Activité DJ / création musicale et présence digitale locale.</p>
+                        <h3>🎵 LMix</h3>
+                        <p class="small">Création musicale quand ça me tente.</p>
                         <a href="https://www.youtube.com/@LMix-presta" target="_blank" rel="noopener noreferrer">Chaîne YouTube</a>
                     </article>
+                    <article class="card-link">
+                        <h3>◾️ Le Carré</h3>
+                        <p class="small">Réseau d'étudiants entrepreneurs Toulousains.</p>
+                        <a href="https://www.linkedin.com/company/111612416/admin/dashboard/" target="_blank" rel="noopener noreferrer">in</a>
+                    </article>
+                    <article class="card-link">
+                        <h3>🗓️ EdT</h3>
+                        <p class="small">Gestion des emplois du temps pour des entreprises.</p>
+                        <p class="small" style="color: rgb(207, 207, 28);">Projet en cours...</p>
+                    </article>
                 </div>
             </section>
 
             <section class="section">
-                <h2>Navigation</h2>
+                <h2>Pages</h2>
                 <div class="links">
-                    <a class="card-link" href="about.html">About</a>
-                    <a class="card-link" href="projects.html">Projects</a>
-                    <a class="card-link" href="contact.html">Contact</a>
-                    <a class="card-link" href="engineering.html">Engineering</a>
-                    <a class="card-link" href="career.html">Career</a>
-                    <a class="card-link" href="https://github.com/LMSimonneaux" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                    <a class="card-link" href="about.html" style="color: #e88e52;">Profil</a>
+                    <a class="card-link" href="projects.html" style="color: #51e4ef;">Liens externes</a>
+                    <a class="card-link" href="contact.html" style="color: #ef5154;">Me contacter</a>
+                    <a class="card-link" href="engineering.html" style="color: #11d774;">Études</a>
                 </div>
             </section>
 
             <section class="section">
-                <h2>CV & réseaux</h2>
+                <h2>CV</h2>
                 <p>
-                    <a href="https://www.linkedin.com/in/louis-marie-simonneaux-426a43386" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    ·
-                    <a href="https://github.com/LMSimonneaux/LMSimonneaux/blob/main/Louis-Marie%20Simonneaux.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                    <a href="https://github.com/LMSimonneaux/LMSimonneaux/blob/main/Louis-Marie%20Simonneaux.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
                 </p>
                 <p class="small">Dernière mise à jour : février 2026.</p>
             </section>

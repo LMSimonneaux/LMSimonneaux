@@ -8,8 +8,9 @@
     <style>
       :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#38bdf8; --border:#1f2937; }
       *{box-sizing:border-box}
-      body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top,#1e293b 0%,var(--bg) 45%);color:var(--text);line-height:1.65}
-      .container{max-width:900px;margin:0 auto;padding:2rem 1rem 3rem}
+      body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top,#334155 0%,#0f172a 55%);position:relative;min-height:100vh;isolation:isolate;color:var(--text);line-height:1.65}
+      body::before{content:"";position:fixed;inset:0;background-image:url("images/toulouse_nuit.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;opacity:.22;filter:blur(2px) brightness(1.2) saturate(1.06);transform:scale(1.01);z-index:0;pointer-events:none}
+      .container{max-width:900px;margin:0 auto;padding:2rem 1rem 3rem;position:relative;z-index:1}
       .card{border:1px solid var(--border);background:rgba(17,24,39,.8);border-radius:14px;padding:1.4rem}
       h1,h2{margin-top:0}
       a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
@@ -21,40 +22,72 @@
   <body>
     <main class="container">
       <section class="card">
-        <h1>About</h1>
-        <p>Je suis Louis-Marie Simonneaux, étudiant en ingénierie du numérique à ENSEEIHT (Toulouse).</p>
+        <h1 style="color:var(--accent)">Mon parcours</h1>
+        <p>Élève depuis septembre 2025 à l'École Nationale Supérieure d'Électrotechnique, d'Électronique, 
+            d'Informatique, d'Hydraulique et des Télécommunications (oui c'est un peu long), je suis en cours 
+            de parcours en Sciences du Numérique. Très intéressé par celui-ci et certains des domaines prometteurs 
+            qu'il engendre, l'apprentissage de mes études est largement facilité.</p>
 
-        <h2>Profil</h2>
-        <p>J'aime construire des projets concrets à l'intersection de la tech, de la création et de l'entrepreneuriat, avec une approche pragmatique orientée résultat.</p>
+        <p>En arrivant à l'école (en septembre dernier donc), j'ai rejoint l'association d'entreprenariat parce 
+            que j'avais envie d'essayer de lancer quelque chose et que je pensais que c'était un des meilleurs
+            moments de ma vie pour le faire. De nature curieuse et actif, je suis tout de suite tombé sous le charme 
+            à l'idée de toujours changer, s'adapter, travailler dur mais aussi découvrir, échanger et vendre.</p>
 
-        <h2>Ce que je développe</h2>
+        <p>Le seul problème ? L'idée pour me lancer parce que je n'en avais pas. Pas de soucis, un de mes camarades
+             en avait une. Nous avons foncé tête baissée dans la construction/vente d'un produit (Gifted) très 
+             audacieux et avons tout appris sur le tas : les concepts théoriques d'entreprenariat, la hardware, 
+             le software, le code, le déploiement web et même la découpe laser, mais aussi la vente, la position 
+             du prix, la publicité via les réseaux (LinkedIn, Facebook, Instagram) et IRL (marché de Noël), les 
+             rencontres avec des influenceurs, et la disponibilité pour ses clients. Ceci nous a amenés à rencontrer
+              énormément de monde, à participer à beaucoup d'événements ainsi qu'à animer un meetup.</p>
+
+        <p>En janvier, insatisfait du prix qu'imposait le marché et de la complexité qu'exigeait ce que nous 
+            fabriquions, nous avons tous les deux décidé d'arrêter. Plus décidé que jamais, je me suis relancé 
+            aussitôt dans une autre aventure encore en cours...</p>
+
+        <p>Je travaille désormais à l'élaboration d'un SaaS pour des pharmacies/cinémas (pour l'instant) avec EdT.
+             L'idée ? Simplifier la gestion des emplois du temps.</p>
+
+        <p>Devenu passionné par le monde de l'entrepreneuriat et des opportunités qu'il peut engendrer, je cherche 
+            également à créer un réseau d'étudiants entrepreneurs à Toulouse avec Le Carré. Il s'agit d'un rdv par 
+            mois entre une trentaine d'étudiants venant de toutes les écoles et de plusieurs entrepreneurs
+            expérimentés parlant de leurs visions et expériences.</p>
+
+        <h2 style="color:var(--accent)">Ce que j'aime</h2>
+        <p>Créer des projets concrets répondants à un besoin réel. </p>
+
+        <h2 style="color:var(--accent)">Ce que je souhaite apprendre</h2>
         <ul>
-          <li>Développement logiciel (Python, C/C++, bases web)</li>
-          <li>IA appliquée et automatisation</li>
-          <li>Projets entrepreneuriaux (MVP, tests utilisateurs, itérations)</li>
+          <li>Tout ce qui est relatif à la tech dans le domaine de l'informatique</li>
+          <li>Application concrète d'IA et d'automatisation.</li>
+          <li>Le monde de la start up</li>
         </ul>
 
-        <h2>Formation</h2>
+        <h2 style="color:var(--accent)">Formation</h2>
         <ul>
-          <li>ENSEEIHT — Sciences du numérique (en cours)</li>
-          <li>CPGE (Physique / Sciences de l'ingénieur) — Lycée Chateaubriand, Rennes</li>
+            <li>ENSEEIHT — Sciences du numérique (en cours)</li>
+            <a href="https://www.enseeiht.fr/" target="_blank" rel="noopener noreferrer">ENSEEIHT</a>
+                |
+            <a href="https://fr.wikipedia.org/wiki/ENSEEIHT" target="_blank" rel="noopener noreferrer">wikipedia</a>
+            <li>CPGE/Lycée (Physique / Sciences de l'ingénieur) — Lycée Chateaubriand, Rennes</li>
+            <a href="https://www.lycee-chateaubriand.fr/" target="_blank" rel="noopener noreferrer">Lycée Chateaubriand</a>
+           | 
+            <a href="https://fr.wikipedia.org/wiki/Lyc%C3%A9e_Chateaubriand_(Rennes)" target="_blank" rel="noopener noreferrer">wikipedia</a>
         </ul>
 
-        <h2>Intérêts</h2>
+        <h2 style="color:var(--accent)">Intérêts et activités autres</h2>
         <ul>
-          <li>Machine learning</li>
-          <li>Product building</li>
-          <li>Musique (DJ / production)</li>
-          <li>Sport (football, vélo, course)</li>
+            <li>Machine learning</li>
+            <li>Sport (football, vélo, course)</li>
+            <li>Théâtre d'improvisation</li>
         </ul>
 
         <p class="muted">Dernière mise à jour : février 2026.</p>
         <div class="nav">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
+          <a href="index.html">Acceuil</a>
+           ============
           <a href="contact.html">Contact</a>
-          <a href="engineering.html">Engineering</a>
-          <a href="career.html">Career</a>
+         
         </div>
       </section>
     </main>
