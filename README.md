@@ -1,4 +1,4 @@
-# ePortfolio GitHub — Louis-Marie Simonneaux
+# Profil LM Simonneaux
 
 ## Accéder au portfolio
 
