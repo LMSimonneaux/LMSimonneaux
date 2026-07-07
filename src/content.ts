@@ -13,6 +13,7 @@ export interface Project {
   detail: Loc
   tags: Loc<string[]>
   links: { label: Loc; href: string }[]
+  video?: { src: string; caption: Loc }
 }
 
 export interface TimelineItem {
@@ -157,6 +158,10 @@ export const projects: Project[] = [
       { label: { fr: 'Code (GitHub)', en: 'Code (GitHub)' }, href: 'https://github.com/LMSimonneaux/.hammerspoon' },
       { label: { fr: 'Guide d’installation', en: 'Install guide' }, href: 'https://github.com/LMSimonneaux/.hammerspoon#guide-dinstallation' },
     ],
+    video: {
+      src: '/LMSimonneaux/videos/clipstack.mp4',
+      caption: { fr: 'ClipStack en action — démo d’une minute.', en: 'ClipStack in action — one-minute demo.' },
+    },
   },
 ]
 

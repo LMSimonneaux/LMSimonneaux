@@ -30,6 +30,12 @@ export default function Work() {
             </div>
             <div className="proj__body">
               <p className="proj__detail">{L(lang, p.detail)}</p>
+              {p.video && (
+                <figure className="proj__video">
+                  <video src={p.video.src} controls muted loop playsInline preload="metadata" />
+                  <figcaption>{L(lang, p.video.caption)}</figcaption>
+                </figure>
+              )}
               <div className="proj__foot">
                 <p className="proj__tags">{L(lang, p.tags).join('  ·  ')}</p>
                 {p.links.length > 0 && (
