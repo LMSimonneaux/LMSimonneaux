@@ -35,8 +35,8 @@ export default function Work() {
                 {p.links.length > 0 && (
                   <div className="proj__links">
                     {p.links.map((l) => (
-                      <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="link-underline">
-                        {L(lang, l.label)} ↗
+                      <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="btn-link">
+                        {L(lang, l.label)} <span aria-hidden>↗</span>
                       </a>
                     ))}
                   </div>

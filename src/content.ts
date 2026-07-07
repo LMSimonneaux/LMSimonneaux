@@ -86,7 +86,8 @@ export const projects: Project[] = [
       en: ['Community', 'Events', '9 schools'],
     },
     links: [
-      { label: { fr: 'Site', en: 'Website' }, href: 'https://lecarre.vercel.app/' },
+      { label: { fr: 'Site', en: 'Website' }, href: 'https://www.lecarre.tech' },
+      { label: { fr: 'Événements (Luma)', en: 'Events (Luma)' }, href: 'https://luma.com/lecarre' },
       { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/le-carr%C3%A9-toulouse/' },
     ],
   },
@@ -107,7 +108,7 @@ export const projects: Project[] = [
       fr: ['SaaS', 'Optimisation', 'En cours'],
       en: ['SaaS', 'Optimisation', 'In progress'],
     },
-    links: [],
+    links: [{ label: { fr: 'Site', en: 'Website' }, href: 'https://www.emploidutemps.me' }],
   },
   {
     id: 'flowlab',

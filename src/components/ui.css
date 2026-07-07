@@ -325,8 +325,8 @@ section[id] {
 }
 .proj__links {
   display: flex;
-  gap: 20px;
-  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 @media (max-width: 680px) {
