@@ -142,7 +142,7 @@ export const projects: Project[] = [
 export const timeline: TimelineItem[] = [
   {
     org: 'Flowlab',
-    href: 'https://www.linkedin.com/company/flowlab-studio/',
+    href: 'https://flowlab.studio/',
     role: { fr: 'CEO right hand & Product Builder', en: 'CEO right hand & Product Builder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Stage · Paris', en: 'Internship · Paris' },
@@ -166,7 +166,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'EdT',
-    href: 'https://www.linkedin.com/company/e-d-t-fr/',
+    href: 'https://www.emploidutemps.me',
     role: { fr: 'Co-fondateur', en: 'Co-founder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -178,7 +178,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Le Carré',
-    href: 'https://www.linkedin.com/company/le-carr%C3%A9-toulouse/',
+    href: 'https://www.lecarre.tech',
     role: { fr: 'Fondateur', en: 'Founder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -190,6 +190,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Pépite France',
+    href: 'https://pepitefrance.pepitizy.fr/fr',
     role: { fr: 'Étudiant-Entrepreneur', en: 'Student-Entrepreneur' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Réseau national', en: 'National network' },
@@ -201,7 +202,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Gifted',
-    href: 'https://www.linkedin.com/company/mygifted/',
+    href: 'https://applicationgifted.vercel.app/',
     role: { fr: 'Co-fondateur', en: 'Co-founder' },
     period: { fr: '2025 — 2026', en: '2025 — 2026' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -213,6 +214,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'ENSEEIHT — Toulouse INP',
+    href: 'https://www.enseeiht.fr/fr/index.html',
     role: { fr: 'Diplôme d’ingénieur · Sciences du Numérique', en: 'Engineering degree · Digital Sciences' },
     period: { fr: '2025 — 2028', en: '2025 — 2028' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -224,6 +226,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Lycée Chateaubriand — Rennes',
+    href: 'https://www.lycee-chateaubriand.fr/',
     role: { fr: 'CPGE · Physique & Sciences de l’Ingénieur', en: 'Preparatory class · Physics & Engineering Science' },
     period: { fr: '2023 — 2025', en: '2023 — 2025' },
     place: { fr: 'Rennes', en: 'Rennes' },
