@@ -12,7 +12,14 @@ function Column({ title, items }: { title: string; items: TimelineItem[] }) {
           <div className="tl__period">{L(lang, it.period)}</div>
           <div className="tl__body">
             <h4 className="tl__org">
-              {it.org} <span className="tl__role">— {L(lang, it.role)}</span>
+              {it.href ? (
+                <a href={it.href} target="_blank" rel="noopener noreferrer" className="link-underline">
+                  {it.org}
+                </a>
+              ) : (
+                it.org
+              )}{' '}
+              <span className="tl__role">— {L(lang, it.role)}</span>
             </h4>
             <p className="tl__place">{L(lang, it.place)}</p>
             <p className="tl__desc">{L(lang, it.desc)}</p>

@@ -17,6 +17,7 @@ export interface Project {
 
 export interface TimelineItem {
   org: string
+  href?: string
   role: Loc
   period: Loc
   place: Loc
@@ -108,7 +109,10 @@ export const projects: Project[] = [
       fr: ['SaaS', 'Optimisation', 'En cours'],
       en: ['SaaS', 'Optimisation', 'In progress'],
     },
-    links: [{ label: { fr: 'Site', en: 'Website' }, href: 'https://www.emploidutemps.me' }],
+    links: [
+      { label: { fr: 'Site', en: 'Website' }, href: 'https://www.emploidutemps.me' },
+      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/e-d-t-fr/' },
+    ],
   },
   {
     id: 'flowlab',
@@ -146,6 +150,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Genius N7',
+    href: 'https://www.linkedin.com/company/geniusn7/',
     role: { fr: 'Vice-président', en: 'Vice-president' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'ENSEEIHT · Toulouse', en: 'ENSEEIHT · Toulouse' },
@@ -157,6 +162,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'EdT',
+    href: 'https://www.linkedin.com/company/e-d-t-fr/',
     role: { fr: 'Co-fondateur', en: 'Co-founder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -168,6 +174,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Le Carré',
+    href: 'https://www.linkedin.com/company/le-carr%C3%A9-toulouse/',
     role: { fr: 'Fondateur', en: 'Founder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
@@ -190,6 +197,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     org: 'Gifted',
+    href: 'https://www.linkedin.com/company/mygifted/',
     role: { fr: 'Co-fondateur', en: 'Co-founder' },
     period: { fr: '2025 — 2026', en: '2025 — 2026' },
     place: { fr: 'Toulouse', en: 'Toulouse' },
