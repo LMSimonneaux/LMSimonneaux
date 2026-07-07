@@ -16,7 +16,6 @@ export default function Nav() {
   }, [])
 
   const items: { id: string; label: { fr: string; en: string } }[] = [
-    { id: 'profil', label: navContent.profil },
     { id: 'parcours', label: navContent.parcours },
     { id: 'projets', label: navContent.projets },
     { id: 'contact', label: navContent.contact },

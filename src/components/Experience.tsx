@@ -33,7 +33,7 @@ export default function Experience() {
       <Reveal>
         <div className="section-head">
           <h2>{L(lang, sectionTitles.path)}</h2>
-          <span className="idx">02</span>
+          <span className="idx">01</span>
         </div>
       </Reveal>
 

@@ -43,19 +43,6 @@ export const hero = {
   ctaWork: { fr: 'Voir le travail', en: 'See the work' } as Loc,
 }
 
-/* ---------------- About ---------------- */
-export const about = {
-  lead: {
-    fr: 'Élève-ingénieur à l’ENSEEIHT. Je lance des produits concrets — IA, SaaS, communauté — et j’apprends en construisant.',
-    en: 'Engineering student at ENSEEIHT. I ship concrete products — AI, SaaS, community — and learn by building.',
-  } as Loc,
-  likeTitle: { fr: 'Ce qui me fait avancer', en: 'What drives me' } as Loc,
-  like: {
-    fr: 'Créer des projets concrets qui répondent à un besoin réel — et tout apprendre sur le tas pour y arriver.',
-    en: 'Building concrete projects that answer a real need — and learning whatever it takes to get there.',
-  } as Loc,
-}
-
 /* ---------------- Projects ---------------- */
 export const projects: Project[] = [
   {
@@ -263,14 +250,12 @@ export const contact = {
 
 /* ---------------- Nav ---------------- */
 export const nav = {
-  profil: { fr: 'Profil', en: 'About' } as Loc,
   parcours: { fr: 'Parcours', en: 'Path' } as Loc,
   projets: { fr: 'Projets', en: 'Work' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,
 }
 
 export const sectionTitles = {
-  about: { fr: 'Profil', en: 'About' } as Loc,
   work: { fr: 'Travail sélectionné', en: 'Selected work' } as Loc,
   path: { fr: 'Parcours', en: 'Path' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,

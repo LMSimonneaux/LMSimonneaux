@@ -10,7 +10,7 @@ export default function Work() {
       <Reveal>
         <div className="section-head">
           <h2>{L(lang, sectionTitles.work)}</h2>
-          <span className="idx">03</span>
+          <span className="idx">02</span>
         </div>
       </Reveal>
 
