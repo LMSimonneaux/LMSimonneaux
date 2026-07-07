@@ -29,11 +29,6 @@ export interface Highlight {
   meta: Loc
 }
 
-export interface SkillGroup {
-  label: Loc
-  items: string[]
-}
-
 /* ---------------- Hero ---------------- */
 export const hero = {
   eyebrow: {
@@ -51,7 +46,6 @@ export const hero = {
     en: ['Artificial intelligence', 'Entrepreneurship', 'Engineering'],
   } as Loc<string[]>,
   ctaWork: { fr: 'Voir le travail', en: 'See the work' } as Loc,
-  ctaCv: { fr: 'Télécharger le CV', en: 'Download CV' } as Loc,
 }
 
 /* ---------------- About ---------------- */
@@ -77,10 +71,6 @@ export const about = {
     fr: 'Créer des projets concrets qui répondent à un besoin réel — et tout apprendre sur le tas pour y arriver.',
     en: 'Building concrete projects that answer a real need — and learning whatever it takes to get there.',
   } as Loc,
-  traits: {
-    fr: ['Organisé', 'Déterminé', 'Très curieux', 'Adaptable'],
-    en: ['Organised', 'Determined', 'Endlessly curious', 'Adaptable'],
-  } as Loc<string[]>,
 }
 
 /* ---------------- Projects ---------------- */
@@ -297,38 +287,6 @@ export const highlights: Highlight[] = [
   },
 ]
 
-/* ---------------- Skills ---------------- */
-export const skillGroups: SkillGroup[] = [
-  {
-    label: { fr: 'Code', en: 'Code' },
-    items: ['Python', 'C', 'C++', 'Ada', 'Matlab', 'React / Next.js'],
-  },
-  {
-    label: { fr: 'IA & Machine Learning', en: 'AI & Machine Learning' },
-    items: ['Applications LLM', 'Stanford CS229 / CS231N / CS224N', 'LangChain', 'Prototypage assisté par IA'],
-  },
-  {
-    label: { fr: 'Produit & Entrepreneuriat', en: 'Product & Entrepreneurship' },
-    items: ['MVP & déploiement web', 'Vente & pricing', 'Pitch & communauté', 'Prototypage (découpe laser, hardware)'],
-  },
-  {
-    label: { fr: 'Outils', en: 'Tools' },
-    items: ['VS Code', 'IntelliJ', 'LM Studio', 'Gamma', 'HubSpot', 'Adobe Illustrator', 'Logic Pro', 'Rekordbox'],
-  },
-]
-
-export const languages: { name: Loc; level: Loc }[] = [
-  { name: { fr: 'Français', en: 'French' }, level: { fr: 'Langue maternelle', en: 'Native' } },
-  { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'C1', en: 'C1' } },
-  { name: { fr: 'Espagnol', en: 'Spanish' }, level: { fr: 'A2', en: 'A2' } },
-  { name: { fr: 'Chinois', en: 'Chinese' }, level: { fr: 'A1', en: 'A1' } },
-]
-
-export const interests = {
-  fr: ['Musique — piano, batterie, accordéon, DJ (LMix)', 'Cinéma & théâtre d’improvisation', 'Football, vélo, course à pied', 'Scoutisme & bénévolat'],
-  en: ['Music — piano, drums, accordion, DJ (LMix)', 'Cinema & improv theatre', 'Football, cycling, running', 'Scouting & volunteering'],
-} as Loc<string[]>
-
 /* ---------------- Contact ---------------- */
 export const contact = {
   lead: {
@@ -357,6 +315,5 @@ export const sectionTitles = {
   work: { fr: 'Travail sélectionné', en: 'Selected work' } as Loc,
   path: { fr: 'Parcours', en: 'Path' } as Loc,
   highlights: { fr: 'Temps forts', en: 'Highlights' } as Loc,
-  skills: { fr: 'Compétences', en: 'Skills' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,
 }

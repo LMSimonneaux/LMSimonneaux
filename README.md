@@ -23,12 +23,7 @@ npm run preview  # prévisualise le build
 ## Contenu
 
 Tout le contenu (FR/EN) vit dans [`src/content.ts`](src/content.ts) — c'est le seul
-fichier à éditer pour mettre à jour les textes, projets, expériences et compétences.
-
-## Photo de profil
-
-Remplacer `public/images/portrait.jpg` par la photo souhaitée (format portrait,
-~ 800×1000 px conseillé).
+fichier à éditer pour mettre à jour les textes, projets et expériences.
 
 ## Déploiement
 

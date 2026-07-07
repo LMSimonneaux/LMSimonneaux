@@ -41,14 +41,6 @@ export default function Hero() {
           <a href="#projets" className="link-accent">
             {L(lang, hero.ctaWork)} ↓
           </a>
-          <a
-            href="/LMSimonneaux/Louis-Marie-Simonneaux-CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline"
-          >
-            {L(lang, hero.ctaCv)}
-          </a>
         </div>
       </div>
 

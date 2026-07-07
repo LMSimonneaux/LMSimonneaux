@@ -13,7 +13,6 @@ function emphasize(text: string): ReactNode[] {
 export default function About() {
   const { lang } = useLang()
   const paragraphs = L(lang, about.paragraphs)
-  const traits = L(lang, about.traits)
 
   return (
     <section id="profil" className="section container">
@@ -37,19 +36,9 @@ export default function About() {
         </div>
 
         <Reveal className="about__aside" delay={0.1}>
-          <figure className="about__portrait">
-            <img
-              src="/LMSimonneaux/images/portrait.png"
-              alt="Louis-Marie Simonneaux"
-              loading="lazy"
-              width={360}
-              height={419}
-            />
-          </figure>
           <div className="about__card">
             <h3>{L(lang, about.likeTitle)}</h3>
             <p>{L(lang, about.like)}</p>
-            <p className="about__traits">{traits.join(' · ')}</p>
           </div>
         </Reveal>
       </div>

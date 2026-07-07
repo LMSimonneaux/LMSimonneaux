@@ -44,7 +44,7 @@ export default function Contact() {
       <Reveal>
         <div className="section-head">
           <h2>{L(lang, sectionTitles.contact)}</h2>
-          <span className="idx">05</span>
+          <span className="idx">04</span>
         </div>
       </Reveal>
 

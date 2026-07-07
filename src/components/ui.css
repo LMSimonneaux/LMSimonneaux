@@ -281,35 +281,6 @@ section[id] {
   position: sticky;
   top: 100px;
 }
-.about__portrait {
-  position: relative;
-  margin: 0 0 18px;
-}
-/* Soft warm halo to ground the cut-out figure on both themes */
-.about__portrait::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 6%;
-  width: 92%;
-  height: 96%;
-  transform: translateX(-50%);
-  background: radial-gradient(
-    56% 56% at 50% 44%,
-    color-mix(in srgb, var(--accent) 24%, transparent),
-    transparent 72%
-  );
-  filter: blur(6px);
-  z-index: 0;
-}
-.about__portrait img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 16px 28px rgba(20, 12, 6, 0.28));
-}
 .about__card {
   border-top: 1px solid var(--hair);
   padding-top: 20px;
@@ -324,12 +295,6 @@ section[id] {
 .about__card p {
   color: var(--ink-2);
   font-size: 0.96rem;
-}
-.about__traits {
-  margin-top: 16px;
-  color: var(--muted);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
 }
 
 @media (max-width: 800px) {
