@@ -1,6 +1,6 @@
 # Profil LM Simonneaux
 
-Hey there, want to dicover
+Hey there, want to dicover more ?
 
 ## Liens principaux
 
