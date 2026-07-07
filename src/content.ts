@@ -160,7 +160,7 @@ export const projects: Project[] = [
     ],
     video: {
       src: '/LMSimonneaux/videos/clipstack.mp4',
-      caption: { fr: 'ClipStack en action — démo d’une minute.', en: 'ClipStack in action — one-minute demo.' },
+      caption: { fr: 'ClipStack en action — démo de 30 secondes.', en: 'ClipStack in action — 30-second demo.' },
     },
   },
 ]
