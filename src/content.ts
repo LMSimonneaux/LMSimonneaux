@@ -136,6 +136,28 @@ export const projects: Project[] = [
       { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/flowlab-studio/' },
     ],
   },
+  {
+    id: 'hammerspoon',
+    name: 'ClipStack',
+    role: { fr: 'Créateur', en: 'Maker' },
+    year: '2026',
+    summary: {
+      fr: 'Un historique de presse-papier pour Mac, open source et gratuit.',
+      en: 'A clipboard history for Mac, open source and free.',
+    },
+    detail: {
+      fr: 'Tout ce que vous copiez (texte, images) est gardé en mémoire ; un raccourci clavier (⌥⌘V) ouvre un panneau pour retrouver et recoller n’importe quel élément. Les mots de passe ne sont jamais capturés. Construit avec Hammerspoon, installable en 5 minutes sans être développeur grâce au guide pas à pas.',
+      en: 'Everything you copy (text, images) is kept in a history; a keyboard shortcut (⌥⌘V) opens a panel to find and re-paste any item. Passwords are never captured. Built with Hammerspoon, installable in 5 minutes without being a developer thanks to the step-by-step guide.',
+    },
+    tags: {
+      fr: ['Open source', 'macOS', 'Lua', 'Outil du quotidien'],
+      en: ['Open source', 'macOS', 'Lua', 'Everyday tool'],
+    },
+    links: [
+      { label: { fr: 'Code (GitHub)', en: 'Code (GitHub)' }, href: 'https://github.com/LMSimonneaux/.hammerspoon' },
+      { label: { fr: 'Guide d’installation', en: 'Install guide' }, href: 'https://github.com/LMSimonneaux/.hammerspoon#guide-dinstallation' },
+    ],
+  },
 ]
 
 /* ---------------- Experience & education ---------------- */
