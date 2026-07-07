@@ -12,13 +12,12 @@ const Ctx = createContext<LangCtx | null>(null)
 const KEY = 'lm-lang'
 
 function initial(): Lang {
-  if (typeof window === 'undefined') return 'fr'
+  if (typeof window === 'undefined') return 'en'
   const param = new URLSearchParams(window.location.search).get('lang')
   if (param === 'fr' || param === 'en') return param
   const saved = localStorage.getItem(KEY)
   if (saved === 'fr' || saved === 'en') return saved
-  const nav = navigator.language?.toLowerCase() ?? 'fr'
-  return nav.startsWith('en') ? 'en' : 'fr'
+  return 'en'
 }
 
 export function LangProvider({ children }: { children: ReactNode }) {
