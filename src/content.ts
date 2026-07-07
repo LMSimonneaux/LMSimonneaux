@@ -51,21 +51,9 @@ export const hero = {
 /* ---------------- About ---------------- */
 export const about = {
   lead: {
-    fr: 'Curieux, déterminé et entreprenant. Depuis mon entrée à l’ENSEEIHT, je n’ai pas arrêté de lancer des choses — et d’apprendre en construisant.',
-    en: 'Curious, driven and entrepreneurial. Since starting at ENSEEIHT I haven’t stopped launching things — and learning by building.',
+    fr: 'Élève-ingénieur à l’ENSEEIHT. Je lance des produits concrets — IA, SaaS, communauté — et j’apprends en construisant.',
+    en: 'Engineering student at ENSEEIHT. I ship concrete products — AI, SaaS, community — and learn by building.',
   } as Loc,
-  paragraphs: {
-    fr: [
-      'Élève-ingénieur en Sciences du Numérique à l’ENSEEIHT, je me suis lancé dans l’entrepreneuriat dès mon arrivée à l’école. Premier projet : Gifted, un cadeau réinventé par l’IA, conçu et vendu *from scratch* en trois mois — hardware, software, code, déploiement web, découpe laser, mais aussi vente, pricing, publicité et terrain.',
-      'De cette première aventure est née une conviction : créer des produits concrets qui répondent à un vrai besoin. J’ai enchaîné avec EdT, un SaaS de gestion d’emplois du temps, fondé Le Carré pour fédérer les étudiants-entrepreneurs toulousains, et je construis aujourd’hui des produits chez Flowlab comme bras droit du CEO.',
-      'En parallèle, je me forme en profondeur à l’IA et au machine learning (cours de Stanford, applications LLM) et j’anime la vie entrepreneuriale de mon école comme vice-président de Genius N7.',
-    ],
-    en: [
-      'Engineering student in Digital Sciences at ENSEEIHT, I jumped into entrepreneurship the moment I arrived. First project: Gifted, a gift reinvented through AI — designed and sold from scratch in three months: hardware, software, code, web deployment, laser cutting, but also sales, pricing, advertising and fieldwork.',
-      'That first venture left me with one conviction: build concrete products that meet a real need. I followed with EdT, a scheduling SaaS, founded Le Carré to unite Toulouse’s student entrepreneurs, and today I build products at Flowlab as the CEO’s right hand.',
-      'In parallel I go deep on AI and machine learning (Stanford courses, LLM applications) and lead my school’s entrepreneurial life as vice-president of Genius N7.',
-    ],
-  } as Loc<string[]>,
   likeTitle: { fr: 'Ce qui me fait avancer', en: 'What drives me' } as Loc,
   like: {
     fr: 'Créer des projets concrets qui répondent à un besoin réel — et tout apprendre sur le tas pour y arriver.',
