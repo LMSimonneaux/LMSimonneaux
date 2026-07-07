@@ -1,11 +1,41 @@
-# Profil LM Simonneaux
+# Louis-Marie Simonneaux — e-Portfolio
 
-Hey there, want to dicover more ?
+Portfolio personnel : éditorial, chaleureux, bilingue (FR/EN), avec thème clair/sombre
+(Toulouse de jour ↔ de nuit en fond) et animations d'arrivée.
 
-## Liens principaux
+**En ligne :** https://lmsimonneaux.github.io/LMSimonneaux/
 
-- GitHub : [@LMSimonneaux](https://github.com/LMSimonneaux)
-- LinkedIn : [louis-marie-simonneaux-426a43386](https://www.linkedin.com/in/louis-marie-simonneaux-426a43386)
-- Le Carré : [Website](https://www.lecarre.tech/fr/)
-- EdT : [Website](https://www.emploidutemps.me)
-- Gifted : [Website](https://applicationgifted.vercel.app/)
+## Stack
+
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/) + TypeScript
+- [Framer Motion](https://www.framer.com/motion/) — chorégraphie d'arrivée & reveals
+- CSS sur-mesure (variables de thème), polices *Fraunces* + *Inter*
+
+## Développement
+
+```bash
+npm install
+npm run dev      # http://localhost:5173/LMSimonneaux/
+npm run build    # génère dist/
+npm run preview  # prévisualise le build
+```
+
+## Contenu
+
+Tout le contenu (FR/EN) vit dans [`src/content.ts`](src/content.ts) — c'est le seul
+fichier à éditer pour mettre à jour les textes, projets, expériences et compétences.
+
+## Photo de profil
+
+Remplacer `public/images/portrait.jpg` par la photo souhaitée (format portrait,
+~ 800×1000 px conseillé).
+
+## Déploiement
+
+Push sur `main` → build et publication automatiques via GitHub Actions
+([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)).
+Régler une fois *Settings → Pages → Source* sur **GitHub Actions**.
+
+## Ancien site
+
+L'ancienne version (HTML statique) est conservée dans [`legacy/`](legacy/).
