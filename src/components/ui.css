@@ -453,39 +453,6 @@ section[id] {
   margin-top: 7px;
   max-width: 46ch;
 }
-.hl__title {
-  margin-top: clamp(46px, 6vw, 70px);
-}
-.hl__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px 32px;
-}
-.hl__item {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-.hl__dot {
-  width: 7px;
-  height: 7px;
-  margin-top: 8px;
-  border-radius: 1px;
-  background: var(--accent);
-  flex: none;
-}
-.hl__item b {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 1.02rem;
-  color: var(--ink);
-}
-.hl__item p {
-  font-size: 0.86rem;
-  color: var(--muted);
-  margin-top: 2px;
-}
-
 @media (max-width: 700px) {
   .tl__grid {
     grid-template-columns: 1fr;

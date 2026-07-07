@@ -1,5 +1,5 @@
 import { useLang, L } from '../lib/i18n'
-import { timeline, highlights, sectionTitles, type TimelineItem } from '../content'
+import { timeline, sectionTitles, type TimelineItem } from '../content'
 import { Reveal } from './motion'
 
 function Column({ title, items }: { title: string; items: TimelineItem[] }) {
@@ -40,21 +40,6 @@ export default function Experience() {
       <div className="tl__grid">
         <Column title={lang === 'fr' ? 'Expérience' : 'Experience'} items={work} />
         <Column title={lang === 'fr' ? 'Formation' : 'Education'} items={edu} />
-      </div>
-
-      <Reveal>
-        <h3 className="tl__title hl__title">{L(lang, sectionTitles.highlights)}</h3>
-      </Reveal>
-      <div className="hl__grid">
-        {highlights.map((h, i) => (
-          <Reveal className="hl__item" key={i} delay={i * 0.05}>
-            <span className="hl__dot" />
-            <div>
-              <b>{L(lang, h.title)}</b>
-              <p>{L(lang, h.meta)}</p>
-            </div>
-          </Reveal>
-        ))}
       </div>
     </section>
   )

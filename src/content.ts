@@ -24,11 +24,6 @@ export interface TimelineItem {
   kind: 'work' | 'edu'
 }
 
-export interface Highlight {
-  title: Loc
-  meta: Loc
-}
-
 /* ---------------- Hero ---------------- */
 export const hero = {
   eyebrow: {
@@ -251,30 +246,6 @@ export const timeline: TimelineItem[] = [
   },
 ]
 
-/* ---------------- Highlights ---------------- */
-export const highlights: Highlight[] = [
-  {
-    title: { fr: 'Prix du Jury', en: 'Jury Prize' },
-    meta: { fr: 'Parcours Entrepreneurs · La Mêlée Numérique × N-START, 2026', en: 'Entrepreneurs program · La Mêlée Numérique × N-START, 2026' },
-  },
-  {
-    title: { fr: 'VivaTech 2026', en: 'VivaTech 2026' },
-    meta: { fr: 'Délégation étudiante toulousaine montée avec START Paris', en: 'Toulouse student delegation set up with START Paris' },
-  },
-  {
-    title: { fr: 'STATION F', en: 'STATION F' },
-    meta: { fr: 'Invité par START Paris parmi des fondateurs européens', en: 'Invited by START Paris among European founders' },
-  },
-  {
-    title: { fr: 'Meetup Gifted', en: 'Gifted meetup' },
-    meta: { fr: 'Présentation du projet à l’Artilect FabLab, Toulouse', en: 'Project talk at Artilect FabLab, Toulouse' },
-  },
-  {
-    title: { fr: 'Hackathons', en: 'Hackathons' },
-    meta: { fr: 'Ecosprint (SNCF Réseau × Getlink) · VOL-TE (FlyImpulse, ENAC)', en: 'Ecosprint (SNCF Réseau × Getlink) · VOL-TE (FlyImpulse, ENAC)' },
-  },
-]
-
 /* ---------------- Contact ---------------- */
 export const contact = {
   lead: {
@@ -302,6 +273,5 @@ export const sectionTitles = {
   about: { fr: 'Profil', en: 'About' } as Loc,
   work: { fr: 'Travail sélectionné', en: 'Selected work' } as Loc,
   path: { fr: 'Parcours', en: 'Path' } as Loc,
-  highlights: { fr: 'Temps forts', en: 'Highlights' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,
 }
