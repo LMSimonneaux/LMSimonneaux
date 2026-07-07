@@ -131,7 +131,10 @@ export const projects: Project[] = [
       fr: ['Product', 'Automatisation', 'Stage · Paris'],
       en: ['Product', 'Automation', 'Internship · Paris'],
     },
-    links: [{ label: { fr: 'Flowlab', en: 'Flowlab' }, href: 'https://flowlab.studio' }],
+    links: [
+      { label: { fr: 'Site', en: 'Website' }, href: 'https://flowlab.studio' },
+      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/flowlab-studio/' },
+    ],
   },
 ]
 
@@ -139,6 +142,7 @@ export const projects: Project[] = [
 export const timeline: TimelineItem[] = [
   {
     org: 'Flowlab',
+    href: 'https://www.linkedin.com/company/flowlab-studio/',
     role: { fr: 'CEO right hand & Product Builder', en: 'CEO right hand & Product Builder' },
     period: { fr: '2026 — auj.', en: '2026 — now' },
     place: { fr: 'Stage · Paris', en: 'Internship · Paris' },
