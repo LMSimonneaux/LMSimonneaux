@@ -302,6 +302,96 @@ export const timeline: TimelineItem[] = [
   },
 ]
 
+/* ---------------- Tools ---------------- */
+export interface Tool {
+  name: string
+  /**
+   * Basename of the mark in `public/logos/` (without `.svg`). Omitted when no
+   * redistributable mark exists — the tile then falls back to a monogram.
+   * To add one later: drop `public/logos/<slug>.svg` here and set the slug.
+   */
+  slug?: string
+  /** Wordmark rather than a symbol: needs a wider box or it reads as a smudge. */
+  wide?: boolean
+  /** Overrides the monogram derived from the name when that reads badly. */
+  mono?: string
+}
+
+/* Marks come from Simple Icons (CC0), topped up from SVG Logos (CC0) and Devicon
+   (MIT) for the brands Simple Icons had to withdraw. The entries still without a
+   slug are either products no open icon set carries, or marks that collapse into
+   a featureless blob once silhouetted (BrowserStack's circle, Illustrator's
+   square) — those render as monograms instead. */
+export const tools: Tool[] = [
+  { name: 'LinkedIn Sales Navigator', slug: 'linkedin' },
+  { name: 'PhantomBuster' },
+  { name: '1Password', slug: '1password' },
+  { name: 'Appwrite', slug: 'appwrite' },
+  { name: 'Supabase', slug: 'supabase' },
+  { name: 'Heroku', slug: 'heroku' },
+  { name: 'DigitalOcean', slug: 'digitalocean' },
+  { name: 'Railway', slug: 'railway' },
+  { name: 'New Relic', slug: 'newrelic' },
+  { name: 'LM Studio', slug: 'lmstudio' },
+  { name: 'Vercel', slug: 'vercel' },
+  { name: 'GitHub', slug: 'github' },
+  { name: 'VS Code', slug: 'vscode' },
+  { name: 'Cursor', slug: 'cursor' },
+  { name: 'GitLab', slug: 'gitlab' },
+  { name: 'Stripe', slug: 'stripe' },
+  { name: 'Pennylane' },
+  { name: 'Beekeeper Studio', slug: 'beekeeperstudio' },
+  { name: 'Claude Code', slug: 'claude' },
+  { name: 'Claude Console', slug: 'anthropic' },
+  { name: 'ChatGPT Atlas', slug: 'openai' },
+  { name: 'Codex', slug: 'openai' },
+  { name: 'Resend', slug: 'resend' },
+  { name: 'Cal.com', slug: 'caldotcom', wide: true },
+  { name: 'Namecheap', slug: 'namecheap' },
+  { name: '.tech domains' },
+  { name: 'Cloudflare', slug: 'cloudflare' },
+  { name: 'Microsoft Azure', slug: 'microsoftazure' },
+  { name: 'Microsoft 365', slug: 'microsoft365' },
+  { name: 'Notion', slug: 'notion' },
+  { name: 'Slack', slug: 'slack' },
+  { name: 'Sentry', slug: 'sentry' },
+  { name: 'Polypane' },
+  { name: 'BrowserStack' },
+  { name: 'Pageclip' },
+  { name: 'HazeOver' },
+  { name: 'Hammerspoon' },
+  { name: 'NotebookLM', slug: 'notebooklm' },
+  { name: 'Base44' },
+  { name: 'Lovable', slug: 'lovable' },
+  { name: 'PromptCowboy' },
+  { name: 'Fireflies' },
+  { name: 'Luma' },
+  { name: 'Meetup', slug: 'meetup' },
+  { name: 'Payload', slug: 'payloadcms' },
+  { name: 'Mermaid', slug: 'mermaid' },
+  { name: 'MarkChart' },
+  { name: 'draw.io', slug: 'diagramsdotnet' },
+  { name: 'Linear', slug: 'linear' },
+  { name: 'Jira', slug: 'jira' },
+  { name: 'iTerm2', slug: 'iterm2' },
+  { name: 'Docker', slug: 'docker' },
+  { name: 'Shottr' },
+  { name: 'Inkscape', slug: 'inkscape' },
+  { name: 'Adobe Illustrator' },
+  { name: 'Hugging Face', slug: 'huggingface' },
+  { name: 'Logic Pro' },
+  { name: 'Google Analytics', slug: 'googleanalytics' },
+  { name: 'Google Search Console', slug: 'googlesearchconsole' },
+  { name: 'Google Cloud', slug: 'googlecloud' },
+  { name: 'Neovim', slug: 'neovim' },
+  { name: 'Herd' },
+  { name: 'tmux', slug: 'tmux' },
+  { name: 'Raycast', slug: 'raycast' },
+  { name: 'OVHcloud', slug: 'ovh' },
+  { name: 'Zimbra' },
+  { name: 'improvMX', slug: 'improvmx' },
+]
+
 /* ---------------- Contact ---------------- */
 export const contact = {
   lead: {
@@ -330,11 +420,18 @@ export const contact = {
 export const nav = {
   parcours: { fr: 'Parcours', en: 'Path' } as Loc,
   projets: { fr: 'Projets', en: 'Work' } as Loc,
+  outils: { fr: 'Outils', en: 'Tools' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,
 }
 
 export const sectionTitles = {
   work: { fr: 'Travail sélectionné', en: 'Selected work' } as Loc,
   path: { fr: 'Parcours', en: 'Path' } as Loc,
+  tools: { fr: 'Outils', en: 'Tools' } as Loc,
   contact: { fr: 'Contact', en: 'Contact' } as Loc,
 }
+
+export const toolsLead = {
+  fr: 'Ce avec quoi je construis, livre et fais tourner, au quotidien.',
+  en: 'What I build, ship and operate with, day to day.',
+} as Loc

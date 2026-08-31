@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Work from './components/Work'
+import Tools from './components/Tools'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -19,6 +20,7 @@ export default function App() {
           <Hero />
           <Experience />
           <Work />
+          <Tools />
           <Contact />
         </main>
         <Footer />

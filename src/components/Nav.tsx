@@ -40,6 +40,7 @@ export default function Nav() {
   const items: { id: string; label: { fr: string; en: string } }[] = [
     { id: 'parcours', label: navContent.parcours },
     { id: 'projets', label: navContent.projets },
+    { id: 'outils', label: navContent.outils },
     { id: 'contact', label: navContent.contact },
   ]
 
