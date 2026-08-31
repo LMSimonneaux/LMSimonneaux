@@ -53,7 +53,20 @@ export default function Contact() {
           <Reveal>
             <p className="contact__lead">{L(lang, contact.lead)}</p>
           </Reveal>
-          <Reveal delay={0.06}>
+          <Reveal delay={0.04}>
+            <div className="contact__booking">
+              <a
+                href={contact.booking.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-book"
+              >
+                {L(lang, contact.booking.label)} <span aria-hidden>→</span>
+              </a>
+              <p className="contact__book-note">{L(lang, contact.booking.note)}</p>
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
             <ul className="contact__links">
               {contact.links.map((l) => (
                 <li key={l.label}>

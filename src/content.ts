@@ -28,46 +28,59 @@ export interface TimelineItem {
 
 /* ---------------- Hero ---------------- */
 export const hero = {
-  eyebrow: {
-    fr: 'Étudiant-ingénieur ENSEEIHT · Builder · Toulouse',
-    en: 'Engineering student at ENSEEIHT · Builder · Toulouse',
-  } as Loc,
   name: 'Louis-Marie Simonneaux',
   statement: {
-    fr: 'Je conçois et je lance des produits — de l’idée à la mise en marché.',
-    en: 'I design and ship products — from idea to market.',
+    fr: 'Flexible, curieux et travailleur, je m’adapte pour concilier travail et plaisir.',
+    en: 'Flexible, curious and hard-working, I adapt to blend work with pleasure.',
   } as Loc,
-  statementAccent: { fr: 'de l’idée à la mise en marché.', en: 'from idea to market.' } as Loc,
-  domains: {
-    fr: ['Intelligence artificielle', 'Entrepreneuriat', 'Ingénierie'],
-    en: ['Artificial intelligence', 'Entrepreneurship', 'Engineering'],
-  } as Loc<string[]>,
+  statementAccent: {
+    fr: 'concilier travail et plaisir.',
+    en: 'blend work with pleasure.',
+  } as Loc,
   ctaWork: { fr: 'Voir le travail', en: 'See the work' } as Loc,
 }
 
 /* ---------------- Projects ---------------- */
 export const projects: Project[] = [
   {
-    id: 'gifted',
-    name: 'Gifted',
-    role: { fr: 'Co-fondateur', en: 'Co-founder' },
-    year: '2025',
+    id: 'agence',
+    name: 'Agence Simonneaux',
+    role: { fr: 'Fondateur', en: 'Founder' },
+    year: '2026',
     summary: {
-      fr: 'Un cadeau réinventé par l’IA : vos photos deviennent un récit interactif.',
-      en: 'A gift reinvented through AI: your photos become an interactive story.',
+      fr: 'Des sites vitrines sur-mesure, livrés avec le back-office pour les faire vivre.',
+      en: 'Bespoke showcase websites, delivered with the back-office to keep them alive.',
     },
     detail: {
-      fr: 'Gifted transforme de vieilles photos en une aventure narrative personnalisée, générée par IA et guidée par vos souvenirs. Le tout dans un coffret physique : boîte gravée au laser, photos imprimées et badge NFC qui relie l’objet à l’application. Conçu et vendu de A à Z, présenté en meetup à l’Artilect FabLab.',
-      en: 'Gifted turns old photos into a personalised narrative adventure, AI-generated and guided by your memories — wrapped in a physical box: laser-engraved case, printed photos and an NFC badge linking object to app. Built and sold end to end, presented at an Artilect FabLab meetup.',
+      fr: 'L’agence conçoit et livre en un mois la vitrine d’une entreprise, puis lui en rend les clés : un back-office sur-mesure d’où le client publie ses réalisations, retouche ses textes et soigne son référencement — sans écrire une ligne de code. Chaque site part d’un template maison que je fais évoluer d’un projet à l’autre, et passe par une recette sur une vingtaine d’appareils avant la mise en ligne.',
+      en: 'The agency designs and ships a company’s website in a month, then hands over the keys: a bespoke back-office where the client publishes their work, edits their copy and tends to their SEO — without writing a line of code. Every site starts from an in-house template I grow from one project to the next, and goes through QA on some twenty devices before launch.',
     },
     tags: {
-      fr: ['Produit', 'IA générative', 'Next.js · Claude · Gemini', 'NFC'],
-      en: ['Product', 'Generative AI', 'Next.js · Claude · Gemini', 'NFC'],
+      fr: ['Agence', 'Next.js · Payload CMS', 'Cloudflare Workers', 'Design system'],
+      en: ['Agency', 'Next.js · Payload CMS', 'Cloudflare Workers', 'Design system'],
+    },
+    links: [{ label: { fr: 'Site', en: 'Website' }, href: 'https://agence-simonneaux.fr' }],
+  },
+  {
+    id: 'edt',
+    name: 'EdT',
+    role: { fr: 'Co-fondateur', en: 'Co-founder' },
+    year: '2026',
+    summary: {
+      fr: 'Un SaaS de gestion d’emplois du temps intelligents pour les TPE/PME.',
+      en: 'A SaaS for smart scheduling, built for small businesses.',
+    },
+    detail: {
+      fr: 'EdT simplifie la gestion des plannings pour les structures qui jonglent avec de nombreuses contraintes — pharmacies, cinémas. Un emploi du temps qui se réajuste au fil de la semaine et prend en compte une multitude de paramètres. Projet en cours.',
+      en: 'EdT simplifies scheduling for businesses juggling many constraints — pharmacies, cinemas. A timetable that re-adjusts through the week and accounts for a multitude of parameters. Work in progress.',
+    },
+    tags: {
+      fr: ['SaaS', 'Optimisation', 'En cours'],
+      en: ['SaaS', 'Optimisation', 'In progress'],
     },
     links: [
-      { label: { fr: 'Site', en: 'Website' }, href: 'https://applicationgifted.vercel.app/' },
-      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/mygifted' },
-      { label: { fr: 'Instagram', en: 'Instagram' }, href: 'https://www.instagram.com/mygifted.app/' },
+      { label: { fr: 'Site', en: 'Website' }, href: 'https://www.emploidutemps.me' },
+      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/e-d-t-fr/' },
     ],
   },
   {
@@ -94,25 +107,26 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'edt',
-    name: 'EdT',
+    id: 'gifted',
+    name: 'Gifted',
     role: { fr: 'Co-fondateur', en: 'Co-founder' },
-    year: '2026',
+    year: '2025',
     summary: {
-      fr: 'Un SaaS de gestion d’emplois du temps intelligents pour les TPE/PME.',
-      en: 'A SaaS for smart scheduling, built for small businesses.',
+      fr: 'Un cadeau réinventé par l’IA : vos photos deviennent un récit interactif.',
+      en: 'A gift reinvented through AI: your photos become an interactive story.',
     },
     detail: {
-      fr: 'EdT simplifie la gestion des plannings pour les structures qui jonglent avec de nombreuses contraintes — pharmacies, cinémas. Un emploi du temps qui se réajuste au fil de la semaine et prend en compte une multitude de paramètres. Projet en cours.',
-      en: 'EdT simplifies scheduling for businesses juggling many constraints — pharmacies, cinemas. A timetable that re-adjusts through the week and accounts for a multitude of parameters. Work in progress.',
+      fr: 'Gifted transforme de vieilles photos en une aventure narrative personnalisée, générée par IA et guidée par vos souvenirs. Le tout dans un coffret physique : boîte gravée au laser, photos imprimées et badge NFC qui relie l’objet à l’application. Conçu et vendu de A à Z, présenté en meetup à l’Artilect FabLab.',
+      en: 'Gifted turns old photos into a personalised narrative adventure, AI-generated and guided by your memories — wrapped in a physical box: laser-engraved case, printed photos and an NFC badge linking object to app. Built and sold end to end, presented at an Artilect FabLab meetup.',
     },
     tags: {
-      fr: ['SaaS', 'Optimisation', 'En cours'],
-      en: ['SaaS', 'Optimisation', 'In progress'],
+      fr: ['Produit', 'IA générative', 'Next.js · Claude · Gemini', 'NFC'],
+      en: ['Product', 'Generative AI', 'Next.js · Claude · Gemini', 'NFC'],
     },
     links: [
-      { label: { fr: 'Site', en: 'Website' }, href: 'https://www.emploidutemps.me' },
-      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/e-d-t-fr/' },
+      { label: { fr: 'Site', en: 'Website' }, href: 'https://applicationgifted.vercel.app/' },
+      { label: { fr: 'LinkedIn', en: 'LinkedIn' }, href: 'https://www.linkedin.com/company/mygifted' },
+      { label: { fr: 'Instagram', en: 'Instagram' }, href: 'https://www.instagram.com/mygifted.app/' },
     ],
   },
   {
@@ -167,6 +181,18 @@ export const projects: Project[] = [
 
 /* ---------------- Experience & education ---------------- */
 export const timeline: TimelineItem[] = [
+  {
+    org: 'Agence Simonneaux',
+    href: 'https://agence-simonneaux.fr',
+    role: { fr: 'Fondateur', en: 'Founder' },
+    period: { fr: '2026 — auj.', en: '2026 — now' },
+    place: { fr: 'Toulouse', en: 'Toulouse' },
+    desc: {
+      fr: 'Conception et livraison de sites vitrines sur-mesure, back-office compris.',
+      en: 'Designing and shipping bespoke showcase sites, back-office included.',
+    },
+    kind: 'work',
+  },
   {
     org: 'Flowlab',
     href: 'https://flowlab.studio/',
@@ -282,6 +308,15 @@ export const contact = {
     fr: 'Un projet, une idée, une opportunité ? Parlons-en.',
     en: 'A project, an idea, an opportunity? Let’s talk.',
   } as Loc,
+  /* Cal.com « Conversation rapide » : 15 min par défaut, en Google Meet. */
+  booking: {
+    label: { fr: 'Prendre rendez-vous', en: 'Book a call' } as Loc,
+    note: {
+      fr: '15 minutes en visio, au créneau qui vous arrange.',
+      en: '15 minutes over video, at whatever slot suits you.',
+    } as Loc,
+    href: 'https://cal.com/louis-marie-simonneaux/conversation-rapide',
+  },
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/louis-marie-simonneaux-426a43386' },
     { label: 'Email', href: 'mailto:lmsimonneaux@gmail.com' },

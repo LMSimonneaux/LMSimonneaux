@@ -1,22 +1,16 @@
 import { useLang, L } from '../lib/i18n'
-import { hero } from '../content'
+import { hero, contact } from '../content'
 
 export default function Hero() {
   const { lang } = useLang()
   const statement = L(lang, hero.statement)
   const accent = L(lang, hero.statementAccent)
   const prefix = statement.replace(accent, '')
-  const domains = L(lang, hero.domains)
 
   return (
     <section id="top" className="hero">
       <div className="hero__scrim" aria-hidden />
       <div className="container hero__inner">
-        <p className="eyebrow hero__eyebrow">
-          <span className="sq" />
-          {L(lang, hero.eyebrow)}
-        </p>
-
         <h1 className="hero__name">
           <span className="mask-line">
             <span className="mask-inner l1">Louis-Marie</span>
@@ -31,15 +25,17 @@ export default function Hero() {
           <em>{accent}</em>
         </p>
 
-        <ul className="hero__domains">
-          {domains.map((d) => (
-            <li key={d}>{d}</li>
-          ))}
-        </ul>
-
         <div className="hero__links">
           <a href="#projets" className="link-accent">
             {L(lang, hero.ctaWork)} ↓
+          </a>
+          <a
+            href={contact.booking.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-book"
+          >
+            {L(lang, contact.booking.label)} <span aria-hidden>→</span>
           </a>
         </div>
       </div>
