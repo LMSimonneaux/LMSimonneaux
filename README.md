@@ -1,8 +1,5 @@
 # Louis-Marie Simonneaux — e-Portfolio
 
-Portfolio personnel : éditorial, chaleureux, bilingue (FR/EN), avec thème clair/sombre
-(Toulouse de jour ↔ de nuit en fond) et animations d'arrivée.
-
 **En ligne :** https://lmsimonneaux.github.io/LMSimonneaux/
 
 ## Stack
