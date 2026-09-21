@@ -80,6 +80,16 @@ export default function Contact() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href={L(lang, contact.cv.href)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline"
+                >
+                  {L(lang, contact.cv.label)} ↗
+                </a>
+              </li>
             </ul>
             <p className="contact__pref">{t.pref}</p>
           </Reveal>

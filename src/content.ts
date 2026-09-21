@@ -414,6 +414,14 @@ export const contact = {
     { label: 'WhatsApp', href: 'https://wa.me/qr/RDFB4BHMZGPBE1' },
   ],
   formAction: 'https://send.pageclip.co/tvkecqJDz27QfjsJMcXIMYS2nZHEvwT0',
+  /* CV en FR, resume en EN : le lien suit la langue du site. */
+  cv: {
+    label: { fr: 'CV', en: 'Resume' } as Loc,
+    href: {
+      fr: '/LMSimonneaux/Louis-Marie-Simonneaux-CV-FR.pdf',
+      en: '/LMSimonneaux/Louis-Marie-Simonneaux-Resume-EN.pdf',
+    } as Loc,
+  },
 }
 
 /* ---------------- Nav ---------------- */

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Louis-Marie Simonneaux — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #1f2430;
+    --ink-soft: #3d4450;
+    --muted: #6b7280;
+    --meta: #8c93a1;
+    --label: #5b7086;
+    --rule: #d8dbe0;
+    --rule-strong: #1f2430;
+    --link: #2f5d8c;
+  }
+
+  @page {
+    size: A4;
+    margin: 16mm 16mm 12mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 1.44;
+    color: var(--ink);
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  a { color: var(--link); text-decoration: none; }
+
+  h1 {
+    font-family: 'Source Serif 4', Charter, Georgia, serif;
+    font-weight: 600;
+    font-size: 24pt;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 5px;
+    color: var(--ink);
+  }
+
+  .subtitle {
+    font-size: 9.8pt;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  .rule-strong {
+    border: 0;
+    border-top: 1.4px solid var(--rule-strong);
+    margin: 0 0 8px;
+  }
+
+  .contact {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 7.6pt;
+    color: var(--meta);
+    line-height: 1.8;
+    margin: 0 0 15px;
+  }
+  .contact a { color: var(--link); }
+  .contact .sep { padding: 0 6px; color: #b9bec7; }
+
+  h2 {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 8pt;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--label);
+    margin: 0 0 6px;
+  }
+
+  h2 + .rule-light { margin-bottom: 9px; }
+
+  .rule-light {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 9px;
+  }
+
+  section { margin-bottom: 14px; }
+
+  .profile {
+    margin: 0;
+    font-size: 9.4pt;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .profile strong { font-weight: 600; color: var(--ink); }
+
+  .entry {
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    column-gap: 20px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  .entry:last-child { margin-bottom: 0; }
+
+  .when {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 8pt;
+    color: var(--meta);
+    padding-top: 2px;
+    white-space: nowrap;
+  }
+
+  .role {
+    font-weight: 700;
+    font-size: 9.9pt;
+    color: var(--ink);
+    margin: 0;
+  }
+  .role .org { font-weight: 400; color: var(--muted); }
+
+  .where {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 8pt;
+    color: var(--meta);
+    margin: 1px 0 4px;
+  }
+
+  .entry p.desc { margin: 0; color: var(--ink-soft); }
+  .entry p.desc + p.desc { margin-top: 4px; }
+
+  ul {
+    margin: 0;
+    padding-left: 15px;
+    color: var(--ink-soft);
+  }
+  li { margin-bottom: 3px; }
+  li:last-child { margin-bottom: 0; }
+  li::marker { color: var(--label); }
+
+  .skill {
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    column-gap: 20px;
+    margin-bottom: 7px;
+    break-inside: avoid;
+  }
+  .skill:last-child { margin-bottom: 0; }
+  .skill .key {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 8pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--meta);
+    padding-top: 1px;
+  }
+  .skill .val { color: var(--ink-soft); }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 8px;
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 8pt;
+    color: var(--meta);
+    line-height: 1.7;
+  }
+  footer a { color: var(--meta); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Louis-Marie Simonneaux</h1>
+  <p class="subtitle">Élève ingénieur à l’ENSEEIHT · Fondateur, Agence Simonneaux · Étudiant-Entrepreneur</p>
+  <hr class="rule-strong" />
+  <p class="contact">
+    Toulouse, France<span class="sep">·</span><a href="mailto:lmsimonneaux@gmail.com">lmsimonneaux@gmail.com</a><span class="sep">·</span><a href="https://lmsimonneaux.github.io/LMSimonneaux">lmsimonneaux.github.io</a><span class="sep">·</span><a href="https://www.linkedin.com/in/louis-marie-simonneaux">LinkedIn</a><span class="sep">·</span><a href="https://github.com/LMSimonneaux">github.com/LMSimonneaux</a>
+  </p>
+</header>
+
+<section>
+  <h2>Profil</h2>
+  <p class="profile">
+    Élève ingénieur en Sciences du Numérique, fondateur et — avant tout — quelqu’un qui aime rassembler.
+    Je conçois et livre des produits avec <strong>Claude Code</strong> et l’API Anthropic au quotidien, du premier
+    prototype à la production, et je construis les lieux où cela se partage : <strong>Le Carré</strong>, le réseau que
+    j’ai fondé, relie les étudiants-entrepreneurs de neuf écoles toulousaines ; je fais partie de l’équipe
+    fondatrice de la communauté étudiante et entrepreneuriale de la ville ; et je dirige l’association
+    entrepreneuriale de mon école. Amener les gens à construire avec Claude Code — y compris ceux qui ne
+    codent pas — c’est mon quotidien.
+  </p>
+</section>
+
+<section>
+  <h2>Expérience</h2>
+  <hr class="rule-light" />
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Fondateur <span class="org">— Agence Simonneaux</span></p>
+      <p class="where">Toulouse · agence-simonneaux.fr</p>
+      <ul>
+        <li>Je conçois et livre le site d’une entreprise en un mois, back-office compris : le client publie ses réalisations et soigne son SEO sans écrire une ligne de code.</li>
+        <li>Next.js, Payload CMS, Cloudflare Workers ; un template maison que j’enrichis de projet en projet, avec une QA sur vingt appareils avant la mise en ligne.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Bras droit du CEO &amp; Product Builder <span class="org">— Flowlab</span></p>
+      <p class="where">Stage · Paris · flowlab.studio</p>
+      <p class="desc">Je conçois et livre des produits sur mesure qui automatisent le fonctionnement des PME — de la première conversation avec le dirigeant jusqu’à la production.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Co-fondateur <span class="org">— EdT</span></p>
+      <p class="where">Toulouse · emploidutemps.me</p>
+      <p class="desc">SaaS de planification intelligente pour les petites structures aux contraintes lourdes — pharmacies, cinémas : un planning qui se réajuste au fil de la semaine.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2025 — 2026</div>
+    <div>
+      <p class="role">Co-fondateur <span class="org">— Gifted</span></p>
+      <p class="where">Toulouse</p>
+      <p class="desc">Un cadeau assisté par IA : de vieilles photos deviennent une histoire interactive, dans un coffret gravé au laser relié à l’application par NFC. Next.js, Claude et Gemini — conçu, développé et vendu de bout en bout ; présenté lors d’un meetup au FabLab Artilect.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Communauté &amp; prise de parole</h2>
+  <hr class="rule-light" />
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Fondateur <span class="org">— Le Carré</span></p>
+      <p class="where">Toulouse · lecarre.tech</p>
+      <ul>
+        <li>Le réseau des étudiants-entrepreneurs de Toulouse : un rendez-vous mensuel qui réunit neuf écoles autour d’entrepreneurs expérimentés.</li>
+        <li>Piloté de bout en bout — programmation, invités, communauté — et ouvre des portes, dont une délégation toulousaine à VivaTech 2026 avec START Paris.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Équipe fondatrice <span class="org">— toulouse. Student Community</span></p>
+      <p class="where">Toulouse · communaute-toulouse.pages.dev</p>
+      <p class="desc">L’un des quatre étudiants qui construisent la communauté étudiante et entrepreneuriale de la ville — « là où les étudiants toulousains construisent la suite » : hackathons, tech talks et un réseau en forte croissance autour de l’IA, des startups et de l’aéronautique.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">Sept. 2026</div>
+    <div>
+      <p class="role">Intervenant <span class="org">— AI-ficionados #6, « L’organisation AI-native en pratique »</span></p>
+      <p class="where">The Social Hub · Toulouse</p>
+      <p class="desc">Démonstration en direct de mon setup Claude Code : piloter deux micro-entreprises depuis un seul centre de contrôle. Le mot d’ordre de la soirée est « démos en direct, pas de théorie » et son public inclut explicitement ceux qui ne codent pas.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Vice-président <span class="org">— Genius N7</span></p>
+      <p class="where">ENSEEIHT · Toulouse</p>
+      <p class="desc">Je dirige l’association entrepreneuriale de l’école ; j’ai représenté l’ENSEEIHT à STATION F avec START Paris.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026 — aujourd’hui</div>
+    <div>
+      <p class="role">Étudiant-Entrepreneur <span class="org">— Pépite France</span></p>
+      <p class="where">Réseau national</p>
+      <p class="desc">Statut national d’étudiant-entrepreneur.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2026</div>
+    <div>
+      <p class="role">Maker <span class="org">— ClipStack</span></p>
+      <p class="where">Open source · macOS · Lua</p>
+      <p class="desc">Un historique de presse-papiers gratuit pour Mac, publié sur GitHub avec un guide d’installation pas à pas écrit pour les non-développeurs — cinq minutes, sans terminal.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Formation</h2>
+  <hr class="rule-light" />
+
+  <div class="entry">
+    <div class="when">2025 — 2028</div>
+    <div>
+      <p class="role">Diplôme d’ingénieur, Sciences du Numérique <span class="org">— ENSEEIHT — Toulouse INP</span></p>
+      <p class="where">Toulouse · Grande école</p>
+      <p class="desc">Algorithmique, structures de données, probabilités et analyse numérique, architecture des systèmes.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2023 — 2025</div>
+    <div>
+      <p class="role">CPGE, Physique &amp; Sciences de l’ingénieur <span class="org">— Lycée Chateaubriand</span></p>
+      <p class="where">Rennes</p>
+      <p class="desc">Deux années de classe préparatoire aux concours des grandes écoles d’ingénieurs.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2023</div>
+    <div>
+      <p class="role">Baccalauréat, Maths &amp; Physique <span class="org">— Mention Très Bien</span></p>
+      <p class="where">Rennes</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Compétences &amp; outils</h2>
+  <hr class="rule-light" />
+
+  <div class="skill">
+    <div class="key">IA</div>
+    <div class="val">Claude Code au quotidien (agents, serveurs MCP, hooks, subagents) · Claude Console et l’API Anthropic · NotebookLM · Hugging Face · LM Studio</div>
+  </div>
+  <div class="skill">
+    <div class="key">Ingénierie</div>
+    <div class="val">TypeScript, React, Next.js, Vite · Payload CMS · Lua (Hammerspoon) · Docker · Git, GitHub</div>
+  </div>
+  <div class="skill">
+    <div class="key">Infrastructure</div>
+    <div class="val">Cloudflare Workers · Vercel · Railway · Supabase · Sentry · Stripe, Resend, Cal.com</div>
+  </div>
+  <div class="skill">
+    <div class="key">Produit</div>
+    <div class="val">Cadrage avec les fondateurs, design systems, QA multi-appareils, SEO et analytics · Linear, Notion, Inkscape et Illustrator</div>
+  </div>
+  <div class="skill">
+    <div class="key">Langues</div>
+    <div class="val">Français — langue maternelle · Anglais — portfolio et documentation technique rédigés en anglais</div>
+  </div>
+</section>
+
+<footer>
+  Portfolio complet et démos : <a href="https://lmsimonneaux.github.io/LMSimonneaux">lmsimonneaux.github.io/LMSimonneaux</a> — Prendre rendez-vous : <a href="https://cal.com/louis-marie-simonneaux">cal.com/louis-marie-simonneaux</a>
+</footer>
+
+</body>
+</html>
