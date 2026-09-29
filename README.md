@@ -1,6 +1,6 @@
-# Louis-Marie Simonneaux — e-Portfolio
+# LM Profile
 
-**En ligne :** https://lmsimonneaux.github.io/LMSimonneaux/
+**Online :** https://lmsimonneaux.github.io/LMSimonneaux/
 
 ## Stack
 
